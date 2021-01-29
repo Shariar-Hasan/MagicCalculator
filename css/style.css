@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/bgi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: rgba(255, 255, 255, 0.685);
+    width: 40vw;
+    text-align: center;
+}
+/* calculator */
+.calculator{
+    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.164),rgba(255, 166, 0, 0.082),rgba(0, 0, 0, 0.658));
+    /* width: 400px; */
+    height: 550px;
+    border-radius: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(.25fr,auto) 420px;
+    grid-row-gap: 15px;
+    color: aliceblue;
+}
+.output{
+    background-color: rgba(255, 255, 255, 0.356);
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: right;
+}
+.output:focus{
+    border: none;
+    outline: none;
+}
+.span-2{
+    grid-column: 1 / span 2;
+}
+.input{
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,80px);
+    grid-gap: 5px;
+}
+button{
+    border-radius: 50px;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+}
+button:active{
+    transform: scale(.8);
+    background-color: black;
+    color: white;
+    
+}
+button:focus{
+    border: none;
+    outline: none;
+    transition: .5s;
+
+}
+.empty{
+    background-color: transparent;
+    border: none;
+}
+.empty:active{
+    background-color: transparent;
+    border: none;
+}
+.number{
+    background-color: transparent;
+
+}
