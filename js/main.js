@@ -1,10 +1,10 @@
 
 const display = document.getElementById('output');
+
 function displayShow(value) {
-    const oparatorList = ['*','/','+','-'];
+    const oparatorList = ['*','/','+','-','.'];
     let displayValue = display.value;
-    let lastCharacterIndex = displayValue.length-1;
-    if(!oparatorList.includes(displayValue[lastCharacterIndex]) || !oparatorList.includes(value))
+    if(!oparatorList.includes(displayValue[displayValue.length-1]) || !oparatorList.includes(value))
     {
         display.value = display.value + value;
     }
