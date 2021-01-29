@@ -27,7 +27,7 @@ h1{
 }
 /* calculator */
 .calculator{
-    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.164),rgba(255, 166, 0, 0.082),rgba(0, 0, 0, 0.658));
+background-color: rgba(0, 0, 0, 0.685);
     /* width: 400px; */
     height: 550px;
     border-radius: 20px;
@@ -39,7 +39,7 @@ h1{
     color: aliceblue;
 }
 .output{
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: rgba(255, 255, 255, 0.699);
     padding: 20px;
     width: 100%;
     border: none;
